@@ -9,8 +9,11 @@ using UnityEngine.Rendering.Universal;
 using RenderPipeline = UnityEngine.Rendering.RenderPipelineManager;
 using UnityEngine.UIElements;
 
-[ExecuteInEditMode]
-public class Mirror : MonoBehaviour
+
+// [ExecuteInEditMode]
+namespace Condo.Mirror
+{
+    public class MirrorCustom : MonoBehaviour
 {
     #region Variables
     // Public variables
@@ -376,4 +379,5 @@ public class Mirror : MonoBehaviour
         matrix[14] = c.w;
     }
     #endregion
+}
 }
